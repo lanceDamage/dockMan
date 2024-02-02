@@ -2,10 +2,11 @@
 FROM continuumio/anaconda3:latest
 
 # Set the working directory
-WORKDIR /app
+# WORKDIR /app
 
 # Install additional Python packages and tools
-RUN conda install -y pandas scikit-learn matplotlib seaborn
+RUN pip install PyPDF2 textract wordcloud nltk collection pathlib PyMuPDF wordcloud matplotlib
+
 
 # Add your custom scripts or notebooks
 COPY . /app
