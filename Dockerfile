@@ -5,7 +5,7 @@ FROM continuumio/anaconda3:latest
 # WORKDIR /app
 
 # Install additional Python packages and tools
-RUN pip install PyPDF2 textract wordcloud nltk collection pathlib PyMuPDF wordcloud matplotlib
+RUN pip install PyPDF2 textract wordcloud nltk collection pathlib PyMuPDF wordcloud matplotlib requests
 
 
 # Add your custom scripts or notebooks
